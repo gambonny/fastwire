@@ -1,6 +1,8 @@
-catalogMode=strict
-linkWorkspacePackages=true
-injectWorkspacePackages=true
-
 packages:
   - packages/*
+
+catalogMode: prefer
+
+injectWorkspacePackages: true
+
+linkWorkspacePackages: true
