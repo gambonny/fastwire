@@ -1,0 +1,6 @@
+catalogMode=strict
+linkWorkspacePackages=true
+injectWorkspacePackages=true
+
+packages:
+  - packages/*

@@ -1,7 +1,7 @@
 {
   "name": "fastwire",
   "version": "0.1.0",
-  "description": "Modern monorepo starter powered by pnpm, Biome, Lefthook, and Syncpack. Minimal, fast, and open source.",
+  "description": "Modern monorepo starter powered by pnpm & Syncpack. Minimal & fast",
   "scripts": {
     "check": "biome check .",
     "format": "biome format . --write",
@@ -20,8 +20,7 @@
     "typescript",
     "devtools",
     "linting",
-    "formatting",
-    "open-source"
+    "formatting"
   ],
   "author": "Jonny Gamba",
   "license": "MIT",
