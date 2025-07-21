@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.syncpack.dev/schema.json",
+  "sortAz": [
+    "dependencies",
+    "devDependencies",
+    "peerDependencies",
+    "optionalDependencies"
+  ],
+  "semverRange": "^",
+  "versionGroups": [
+    {
+      "label": "Match all local workspace packages",
+      "packages": ["**"],
+      "dependencies": ["**"],
+      "isMonorepoGroup": true
+    }
+  ],
+  "filter": {
+    "files": ["**/package.json"]
+  }
+}

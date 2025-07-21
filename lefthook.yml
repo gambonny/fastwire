@@ -4,3 +4,5 @@ pre-commit:
     biome:
       glob: "*.{js,ts,jsx,tsx,json}"
       run: pnpm biome check {staged_files}
+    syncpack:
+      run: pnpm lint:deps

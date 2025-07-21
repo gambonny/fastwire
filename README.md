@@ -1,8 +1,6 @@
 # Fastwire
 
 ![Biome (lint + format)](https://github.com/gambonny/fastwire/actions/workflows/biome_ci.yml/badge.svg)
-![Lefthook](https://img.shields.io/badge/hooks-lefthook-%23f04c4c?logo=git)
-
 
 > A lean monorepo starter powered by pnpm. Minimal config, strict version control, fast workflows.
 
@@ -13,6 +11,7 @@
 - ✅ Volta-pinned Node and pnpm versions
 - ✅ Biome for linting and formatting
 - ✅ TypeScript with strict, modern config
+- ✅ Syncpack for dependency consistency
 - ✅ Lefthook for fast pre-commit checks
 - ✅ Ready for shared packages in `packages/*`
 
@@ -23,6 +22,7 @@ Fastwire uses:
 - [Volta](https://volta.sh) to pin Node and pnpm versions across all contributors
 - [Biome](https://biomejs.dev) for fast, all-in-one formatting and linting
 - [TypeScript](https://www.typescriptlang.org/) with a strict base config and modern features
+- [Syncpack](https://github.com/JamieMason/syncpack) to enforce dependency version consistency
 - [Lefthook](https://github.com/evilmartians/lefthook) to run local Git hooks like format, lint, or test before committing
 
 
@@ -39,9 +39,13 @@ volta install node@22.17.1 pnpm@10.13.1
 
 # 3. Install workspace dependencies
 pnpm install
+```
 
-# 4. Run Biome checks
-pnpm check
+## Scripts
+```bash
+- pnpm check         # Run Biome across all files
+- pnpm deps:check    # Check for mismatched dependency versions with Syncpack
+- pnpm deps:fix      # Auto-fix mismatched versions
 ```
 
 ## Project Structure
@@ -53,4 +57,5 @@ pnpm check
 - tsconfig.base.json     # Shared strict TypeScript configuration
 - biome.json             # Biome config (lint + format)
 - lefthook.yml           # Lefthook hook configuration
+- .syncpackrc.json       # Dependency consistency rules
 ```

@@ -6,6 +6,8 @@
     "prepare": "lefthook install",
     "check": "biome check ./packages/**",
     "format": "biome format ./packages/** --write",
+    "lint:deps": "syncpack list-mismatches",
+    "fix:deps": "syncpack fix-mismatches",
     "test": "echo \"No tests specified yet\""
   },
   "keywords": [
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
     "lefthook": "^1.12.2",
+    "syncpack": "^13.0.4",
     "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@10.13.1",
