@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Modern monorepo starter powered by pnpm & Syncpack. Minimal & fast",
   "scripts": {
-    "check": "biome check .",
+    "prepare": "lefthook install",
+    "check": "biome check ./src",
     "format": "biome format ./src --write",
     "test": "echo \"No tests specified yet\""
   },
@@ -27,6 +28,7 @@
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
+    "lefthook": "^1.12.2",
     "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@10.13.1",

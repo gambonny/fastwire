@@ -1,4 +1,4 @@
-name: Biomejs (lint + format)
+name: Biome (lint + format)
 
 on:
   push:
