@@ -25,5 +25,9 @@
   "author": "Jonny Gamba",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@10.13.1"
+  "packageManager": "pnpm@10.13.1",
+  "volta": {
+    "node": "22.17.1",
+    "pnpm": "10.13.1"
+  }
 }
