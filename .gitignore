@@ -59,3 +59,4 @@ __snapshots__/
 *.tgz
 *.lockbkp
 *.bak
+repomix-output.xml
