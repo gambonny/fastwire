@@ -1,8 +1,14 @@
 packages:
   - packages/*
 
-catalogMode: manual
+catalogMode: strict
 
 injectWorkspacePackages: true
 
 linkWorkspacePackages: true
+
+catalogs:
+  devRoot:
+    "@biomejs/biome": 2.1.2
+    lefthook: ^1.12.2
+    typescript: ^5.8.3

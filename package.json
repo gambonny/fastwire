@@ -29,10 +29,9 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@biomejs/biome": "2.1.2",
-    "lefthook": "^1.12.2",
-    "syncpack": "^13.0.4",
-    "typescript": "^5.8.3"
+    "@biomejs/biome": "catalog:devRoot",
+    "lefthook": "catalog:devRoot",
+    "typescript": "catalog:devRoot"
   },
   "packageManager": "pnpm@10.13.1",
   "volta": {

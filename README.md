@@ -7,11 +7,10 @@
 ## Features
 
 - ✅ Zero-runtime monorepo setup
-- ✅ Uses pnpm catalogs for centralized dependency control
+- ✅ Enforces centralized dependency control via pnpm catalogs (`catalogMode: "strict"`)
 - ✅ Volta-pinned Node and pnpm versions
 - ✅ Biome for linting and formatting
 - ✅ TypeScript with strict, modern config
-- ✅ Syncpack for dependency consistency
 - ✅ Lefthook for fast pre-commit checks
 - ✅ Ready for shared packages in `packages/*`
 
@@ -22,7 +21,6 @@ Fastwire uses:
 - [Volta](https://volta.sh) to pin Node and pnpm versions across all contributors
 - [Biome](https://biomejs.dev) for fast, all-in-one formatting and linting
 - [TypeScript](https://www.typescriptlang.org/) with a strict base config and modern features
-- [Syncpack](https://github.com/JamieMason/syncpack) to enforce dependency version consistency
 - [Lefthook](https://github.com/evilmartians/lefthook) to run local Git hooks like format, lint, or test before committing
 
 
@@ -44,8 +42,6 @@ pnpm install
 ## Scripts
 ```bash
 - pnpm check         # Run Biome across all files
-- pnpm deps:check    # Check for mismatched dependency versions with Syncpack
-- pnpm deps:fix      # Auto-fix mismatched versions
 ```
 
 ## Project Structure
@@ -57,5 +53,4 @@ pnpm install
 - tsconfig.base.json     # Shared strict TypeScript configuration
 - biome.json             # Biome config (lint + format)
 - lefthook.yml           # Lefthook hook configuration
-- .syncpackrc.json       # Dependency consistency rules
 ```
