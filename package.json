@@ -4,8 +4,8 @@
   "description": "Modern monorepo starter powered by pnpm & Syncpack. Minimal & fast",
   "scripts": {
     "prepare": "lefthook install",
-    "check": "biome check ./src",
-    "format": "biome format ./src --write",
+    "check": "biome check ./packages/**",
+    "format": "biome format ./packages/** --write",
     "test": "echo \"No tests specified yet\""
   },
   "keywords": [
