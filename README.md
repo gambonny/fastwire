@@ -7,9 +7,10 @@
 ## Features
 
 - ✅ Zero-runtime monorepo setup
-- ✅ Strict version control with `catalogMode: strict`
+- ✅ Uses pnpm catalogs for centralized dependency control
 - ✅ Volta-pinned Node and pnpm versions
 - ✅ Biome for linting and formatting
+- ✅ TypeScript with strict, modern config
 - ✅ Ready for shared packages in `packages/*`
 
 ## Tooling
@@ -18,6 +19,8 @@ Fastwire uses:
 
 - [Volta](https://volta.sh) to pin Node and pnpm versions across all contributors
 - [Biome](https://biomejs.dev) for fast, all-in-one formatting and linting
+- [TypeScript](https://www.typescriptlang.org/) with a strict base config and modern features (`moduleDetection`, `exactOptionalPropertyTypes`, `verbatimModuleSyntax`, etc.)
+
 
 > ℹ️ **pnpm support in Volta is experimental** — follow [these instructions](https://docs.volta.sh/advanced/pnpm) to enable it properly on your system.
 
@@ -41,4 +44,5 @@ pnpm check
 pnpm-workspace.yaml    # Workspace & catalog config
 package.json           # Volta + workspace metadata
 packages/              # Place your shared packages here
-.biome.json            # Biome config (lint + format)
+tsconfig.base.json     # Shared strict TypeScript configuration
+biome.json             # Biome config (lint + format)
