@@ -42,6 +42,7 @@ pnpm install
 ## Scripts
 ```bash
 - pnpm check         # Run Biome across all files
+- pnpm format        # Auto-format all source files using Biome
 ```
 
 ## Project Structure
