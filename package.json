@@ -4,8 +4,8 @@
   "description": "Modern monorepo starter powered by pnpm. Minimal & fast",
   "scripts": {
     "prepare": "lefthook install",
-    "check": "pnpm -r run check",
-    "format": "pnpm -r run format",
+    "check": "pnpm biome check .",
+    "format": "pnpm biome format . --write",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
