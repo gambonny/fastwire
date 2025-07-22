@@ -1,7 +1,7 @@
 {
   "name": "fastwire",
   "version": "0.1.0",
-  "description": "Modern monorepo starter powered by pnpm & Syncpack. Minimal & fast",
+  "description": "Modern monorepo starter powered by pnpm. Minimal & fast",
   "scripts": {
     "prepare": "lefthook install",
     "check": "pnpm -r run check",
@@ -14,7 +14,6 @@
     "pnpm",
     "biome",
     "lefthook",
-    "syncpack",
     "workspace",
     "template",
     "starter",
