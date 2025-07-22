@@ -6,9 +6,8 @@
     "prepare": "lefthook install",
     "check": "pnpm -r run check",
     "format": "pnpm -r run format",
-    "lint:deps": "syncpack list-mismatches",
-    "fix:deps": "syncpack fix-mismatches",
-    "test": "echo \"No tests specified yet\""
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [
     "monorepo",
@@ -30,8 +29,11 @@
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "catalog:devRoot",
+    "@types/node": "catalog:devRoot",
+    "@vitest/coverage-istanbul": "catalog:devRoot",
     "lefthook": "catalog:devRoot",
-    "typescript": "catalog:devRoot"
+    "typescript": "catalog:devRoot",
+    "vitest": "catalog:devRoot"
   },
   "packageManager": "pnpm@10.13.1",
   "volta": {

@@ -11,6 +11,7 @@
 - ✅ Volta-pinned Node and pnpm versions
 - ✅ Biome for linting and formatting
 - ✅ TypeScript with strict, modern config
+- ✅ Vitest (projects) for testing and coverage
 - ✅ Lefthook for fast pre-commit checks
 - ✅ Ready for shared packages in `packages/*`
 
@@ -21,6 +22,7 @@ Fastwire uses:
 - [Volta](https://volta.sh) to pin Node and pnpm versions across all contributors
 - [Biome](https://biomejs.dev) for fast, all-in-one formatting and linting
 - [TypeScript](https://www.typescriptlang.org/) with a strict base config and modern features
+- [Vitest](https://vitest.dev) for fast, isolated testing and unified coverage reporting
 - [Lefthook](https://github.com/evilmartians/lefthook) to run local Git hooks like format, lint, or test before committing
 
 
@@ -43,7 +45,10 @@ pnpm install
 ```bash
 - pnpm check         # Run Biome across all files
 - pnpm format        # Auto-format all source files using Biome
+- pnpm test          # Run Vitest across all packages
+- pnpm coverage      # Generate unified coverage report from root
 ```
+> 📌 Code coverage is only configured at the workspace root. All tests from all packages are included in a single report.
 
 ## Project Structure
 
@@ -53,5 +58,6 @@ pnpm install
 - packages/              # Place your shared packages here
 - tsconfig.base.json     # Shared strict TypeScript configuration
 - biome.json             # Biome config (lint + format)
+- vitest.config.ts       # Root testing and coverage config
 - lefthook.yml           # Lefthook hook configuration
 ```

@@ -18,7 +18,8 @@
     "declaration": true,
     "declarationMap": true,
     "verbatimModuleSyntax": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    "types": ["vitest/globals"]
   },
   "exclude": ["node_modules", "dist"]
 }

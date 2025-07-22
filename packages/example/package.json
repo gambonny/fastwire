@@ -6,7 +6,8 @@
   "scripts": {
     "check": "pnpm biome check ./src/**",
     "format": "pnpm biome format ./src/** --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "coverage": "echo 'Use root workspace to run coverage for all packages' && exit 1"
   },
   "keywords": [],
   "author": "",

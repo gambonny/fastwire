@@ -3,12 +3,15 @@ packages:
 
 catalogMode: strict
 
+catalogs:
+  devRoot:
+    '@biomejs/biome': 2.1.2
+    '@types/node': ^24.0.15
+    lefthook: ^1.12.2
+    typescript: ^5.8.3
+    vitest: ^3.2.4
+    '@vitest/coverage-istanbul': 3.2.4
+
 injectWorkspacePackages: true
 
 linkWorkspacePackages: true
-
-catalogs:
-  devRoot:
-    "@biomejs/biome": 2.1.2
-    lefthook: ^1.12.2
-    typescript: ^5.8.3
