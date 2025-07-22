@@ -1,0 +1,29 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node via Volta
+        uses: volta-cli/action@v4
+
+      - name: Install Node (via Volta)
+        run: volta install node@22.17.1
+
+      - name: Install pnpm (via Volta)
+        run: volta install pnpm@10.13.1
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run tests
+        run: pnpm test

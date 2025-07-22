@@ -61,3 +61,16 @@ pnpm install
 - vitest.config.ts       # Root testing and coverage config
 - lefthook.yml           # Lefthook hook configuration
 ```
+
+## GitHub Workflows
+
+`Fastwire` comes with two preconfigured GitHub Actions workflows:
+
+- **Biome (lint + format)**
+  Lints and formats the entire codebase using [Biome](https://biomejs.dev) on every push and pull request.
+  → `.github/workflows/biome_ci.yml`
+
+- **Test (Vitest)**
+  Runs all tests across the monorepo on every push and pull request.
+  > 📌 This runs **all tests indiscriminately**, regardless of which packages were changed. This can be optimized later by using filtered package execution.
+  → `.github/workflows/test.yml`
