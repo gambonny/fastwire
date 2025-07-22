@@ -4,8 +4,6 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "check": "pnpm biome check ./src/**",
-    "format": "pnpm biome format ./src/** --write",
     "test": "vitest",
     "coverage": "echo 'Use root workspace to run coverage for all packages' && exit 1"
   },
